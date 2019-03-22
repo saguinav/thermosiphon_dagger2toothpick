@@ -7,28 +7,28 @@ Cold start app, just run the app and get the execution result.
 ### Dagger2
 
 ```
-startup - 8.039108 ms
+startup - 8.161412 ms
 ~ ~ ~ heating ~ ~ ~
 => => pumping => =>
  [_]P coffee! [_]P 
-execution #1 - 11.821476 ms
+execution #1 - 14.576786 ms
 ~ ~ ~ heating ~ ~ ~
 => => pumping => =>
  [_]P coffee! [_]P 
-execution #2 - 0.070016 ms
+execution #2 - 0.099066 ms
 ```
 
-### Koin
+### Toothpick
 
 ```
-startup - 38.75231 ms
+startup - 17.511891 ms
 ~ ~ ~ heating ~ ~ ~
 => => pumping => =>
  [_]P coffee! [_]P 
-execution #1 - 6.998754 ms
+execution #1 - 12.253 ms
 ~ ~ ~ heating ~ ~ ~
 => => pumping => =>
  [_]P coffee! [_]P 
-execution #2 - 0.073675 ms
+execution #2 - 0.083089 ms
 ```
 

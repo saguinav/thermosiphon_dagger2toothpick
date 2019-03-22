@@ -1,0 +1,32 @@
+ext {
+    toothpick_version = "2.1.0"
+}
+
+buildscript {
+    ext {
+        kotlin_version = "1.3.21"
+    }
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    }
+}
+
+apply plugin: 'kotlin'
+apply plugin: 'kotlin-kapt'
+
+archivesBaseName = 'coffee-maker-toothpick'
+
+repositories {
+    mavenLocal()
+    jcenter()
+}
+
+dependencies {
+    compile "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
+
+    implementation "com.github.stephanenicolas.toothpick:toothpick-runtime:${toothpick_version}"
+    kapt "com.github.stephanenicolas.toothpick:toothpick-compiler:${toothpick_version}"
+}
